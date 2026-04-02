@@ -1,0 +1,28 @@
+export const education = [
+  {
+    id: "usc",
+    school: "University of Southern California (USC), Marshall School of Business",
+    subtitle: "",
+    degree: "MBA (STEM)",
+    period: "Expected May 2027",
+    status: "Current",
+    logo: "/assets/logos/usc.png",
+    color: "#990000",
+    website: "https://www.marshall.usc.edu/",
+    description: "Dean's Merit Scholarship (100%) · Prediger Endowed Scholarship · GMAT FE 705",
+    highlights: ["MBA (STEM)", "Dean's Merit Scholarship", "Prediger Endowed Scholarship"],
+  },
+  {
+    id: "nsit",
+    school: "NSIT (now NSUT), Netaji Subhas Institute of Technology",
+    subtitle: "Delhi, India",
+    degree: "B.E. in Information Technology (Computer Science)",
+    period: "May 2021",
+    status: "Completed",
+    logo: "/assets/logos/nsut.png",
+    color: "#2563EB",
+    website: "https://www.nsut.ac.in/",
+    description: "First Class Distinction (CGPA 8.6/10.0)",
+    highlights: ["B.E. in Information Technology", "First Class Distinction", "CGPA 8.6/10.0"],
+  },
+];
