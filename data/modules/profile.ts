@@ -1,13 +1,25 @@
 export const profile = {
   name: "Arihant Rawat",
-  tagline: "USC Marshall School of Business · MBA (STEM)",
+  tagline: "USC Marshall · MBA (STEM) · Product Builder",
   location: "Los Angeles, CA",
   email: "arihantrawat@gmail.com",
-  photo: "/images/arihant-headshot.jpg",
-  photoAlt: "/images/arihant-headshot.jpg",
-  skills: ["Product Development", "Full Stack Development", "AI Product Prototyping"],
-  bio: "I am Arihant Rawat. I build user-centric products from idea to launch, with experience across startups and enterprise teams. I am driven to build in the tech space, working on problems that matter and turning ideas into real, shipped outcomes.",
-  roles: ["MBA Student at USC", "Product Builder", "Technical Product Manager", "Full Stack Developer"],
+  photo: "/assets/ArihantAtBeachUSCHoodie.jpg",
+  photoAlt: "Arihant Rawat",
+  skills: [
+    "Product Development",
+    "AI Product Prototyping",
+    "Full Stack Development",
+    "LLM Integration",
+    "Product Strategy",
+    "Cross-functional Leadership",
+  ],
+  bio: "I build user-centric products from idea to launch across startup and enterprise environments. I studied engineering at NSIT (now NSUT), worked at Cult.fit and Salesforce, and now at USC Marshall I am deepening the product, business, and leadership side of building great technology.",
+  roles: [
+    "MBA Student at USC Marshall",
+    "Product Builder",
+    "Senior Product Developer (ex-Salesforce)",
+    "Full Stack Engineer",
+  ],
 };
 
 export const social = {

@@ -9,14 +9,15 @@ export const experience = [
     color: "#00A1E0",
     website: "https://www.salesforce.com/",
     description:
-      "Full-stack owner for Content Services inside Industries Cloud, partnering with Data Cloud to scale from internal tooling to a customer-facing product.",
+      "Built and scaled Content Services in Industries Cloud from a high-leverage internal system into a customer-facing, API-driven product, with close collaboration across product, platform, and Data Cloud teams.",
     achievements: [
-      "Built backend APIs, frontend interfaces, and systems for Content Services in Industries Cloud",
-      "Integrated with Data Cloud as a key growth feature",
-      "Mentored interns and junior engineers while presenting product demos",
-      "Led early experimentation on agentic AI use cases and team AI tooling adoption",
+      "Owned full-stack delivery across backend APIs, frontend workflows, and system design for Content Services",
+      "Helped integrate with Data Cloud to unlock broader adoption and platform growth",
+      "Partnered with PM, design, and engineering stakeholders to turn ambiguous requirements into shippable releases",
+      "Mentored junior engineers and interns; regularly demoed architecture and product capabilities to technical and non-technical audiences",
+      "Drove early team exploration of agentic AI patterns and AI-assisted developer workflows",
     ],
-    skills: ["Full Stack Development", "API Design", "Data Cloud", "AI Product Integration"],
+    skills: ["Full Stack Development", "API Design", "System Design", "Data Cloud", "AI Product Integration"],
     photos: [],
   },
   {
@@ -29,14 +30,15 @@ export const experience = [
     color: "#7C3AED",
     website: "https://www.cult.fit/",
     description:
-      "App-and-backend lead for Cult.fit Digital Verticals, scaling multiple consumer products during and after COVID.",
+      "Built digital health and fitness products during a high-growth phase, spanning mobile architecture, backend systems, experimentation funnels, and cross-functional product execution.",
     achievements: [
-      "Built core app architecture during React Native to Flutter migration",
-      "Expanded scope from app development into backend systems and experimentation funnels",
-      "Collaborated across product, data science, design, and operations",
-      "Led app development for a portfolio of six digital products",
+      "Led major portions of the React Native to Flutter migration and built core app architecture components",
+      "Expanded from app development into backend services, analytics funnels, and A/B experimentation workflows",
+      "Acted as a bridge between engineering, product, and data science teams to ship user-centric improvements",
+      "Owned technical direction for a portfolio of six digital products as app lead",
+      "Collaborated across design, operations, QA, and support in a fast-moving startup environment",
     ],
-    skills: ["Flutter", "Backend Development", "A/B Testing", "Cross-functional Leadership"],
+    skills: ["Flutter", "Backend Development", "Experimentation", "Product Thinking", "Cross-functional Leadership"],
     photos: [],
   },
 ];
