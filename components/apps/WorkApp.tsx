@@ -153,14 +153,27 @@ export default function WorkApp({ onClose: _onClose }: Props) {
   return (
     <div className="app-window" style={{ background: "#f2f2f7" }}>
       <div className="ios-scroll" style={{ flex: 1, overflowY: "auto", padding: "0 0 32px" }}>
-        <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} style={{ padding: "16px 16px 18px" }}>
+        <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} style={{ padding: "16px 16px 14px" }}>
           <h1 className="ios-large-title" style={{ color: "#1c1c1e", fontFamily: "-apple-system, sans-serif", fontWeight: 800, marginBottom: 4 }}>
             Work
           </h1>
           <p style={{ fontSize: 14, color: "#636366", fontFamily: "-apple-system, sans-serif" }}>
-            Always looking to build something great
+            Building user-centric products across startup and enterprise teams
           </p>
         </motion.div>
+
+        <div style={{ padding: "0 16px 14px", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 8 }}>
+          {[
+            { k: "Years", v: "4+" },
+            { k: "Products", v: "6+" },
+            { k: "Focus", v: "AI + Product" },
+          ].map((m) => (
+            <div key={m.k} style={{ background: "white", borderRadius: 12, border: "1px solid rgba(0,0,0,0.08)", padding: "10px 10px" }}>
+              <div style={{ fontSize: 10, color: "#8e8e93", textTransform: "uppercase", letterSpacing: 0.5 }}>{m.k}</div>
+              <div style={{ fontSize: 14, fontWeight: 700, color: "#6D28D9", marginTop: 2 }}>{m.v}</div>
+            </div>
+          ))}
+        </div>
 
         {/* Year groups */}
         <div style={{ padding: "0 16px 32px" }}>

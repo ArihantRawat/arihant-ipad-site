@@ -343,7 +343,7 @@ export default function HomeScreen({ orientation, onOpenApp, locked, onUnlock }:
                   />
                 </svg>
               </motion.div>
-              <span>Swipe to unlock</span>
+              <span>Swipe up to explore</span>
             </div>
           </motion.div>
         )}
