@@ -177,11 +177,11 @@ export default function WorkApp({ onClose: _onClose }: Props) {
 
         {/* Year groups */}
         <div style={{ padding: "0 16px 32px" }}>
-          {[
-            { label: "2026", items: experience.filter((e) => e.year === "2026") },
-            { label: "2025", items: experience.filter((e) => e.year === "2025") },
-            { label: "2024", items: experience.filter((e) => e.year === "2024") },
-          ].filter((g) => g.items.length > 0).map((group, gi) => (
+          {Array.from(new Set(experience.map((e) => e.year)))
+            .sort((a, b) => Number(b) - Number(a))
+            .map((year) => ({ label: year, items: experience.filter((e) => e.year === year) }))
+            .filter((g) => g.items.length > 0)
+            .map((group, gi) => (
             <div key={group.label} style={{ marginBottom: 22 }}>
               <p style={{
                 fontSize: 13, color: "#6e6e73", fontWeight: 600, letterSpacing: 0.5,
