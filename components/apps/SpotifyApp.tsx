@@ -14,7 +14,14 @@ interface Props {
 export default function SpotifyApp({ onClose: _onClose }: Props) {
   const [tab, setTab] = useState<Tab>("new");
 
-  const albums = tab === "new" ? music.favoriteNewAlbums : music.favoriteOldAlbums;
+  const withTheme = (url?: string) => {
+    if (!url || !url.trim().startsWith("http")) return "";
+    return `${url}${url.includes("?") ? "&" : "?"}theme=0`;
+  };
+
+  const nowPlayingEmbed = withTheme(music.currentlyPlaying.spotifyEmbed);
+  const albums = (tab === "new" ? music.favoriteNewAlbums : music.favoriteOldAlbums)
+    .filter((album) => withTheme(album.embedUrl));
 
   return (
     <div className="app-window" style={{ background: "#121212", display: "flex", flexDirection: "column" }}>
@@ -87,17 +94,24 @@ export default function SpotifyApp({ onClose: _onClose }: Props) {
           >
             Now Playing
           </p>
-          <iframe
-            src={`${music.currentlyPlaying.spotifyEmbed}&theme=0`}
-            width="100%"
-            height="152"
-            frameBorder="0"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            style={{ borderRadius: 12, display: "block" }}
-          />
+          {nowPlayingEmbed ? (
+            <iframe
+              src={nowPlayingEmbed}
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              style={{ borderRadius: 12, display: "block" }}
+            />
+          ) : (
+            <div style={{ borderRadius: 12, background: "#1f1f1f", color: "#9ca3af", padding: "18px 14px", fontSize: 13 }}>
+              Add a Spotify embed URL in data to show now playing.
+            </div>
+          )}
         </motion.div>
 
         {/* Spotify Profile Link */}
+        {social.spotify && social.spotify.trim() && (
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -134,6 +148,7 @@ export default function SpotifyApp({ onClose: _onClose }: Props) {
             </svg>
           </a>
         </motion.div>
+        )}
 
         {/* Tab switcher */}
         <motion.div
@@ -195,7 +210,7 @@ export default function SpotifyApp({ onClose: _onClose }: Props) {
                   {album.artist}
                 </p>
                 <iframe
-                  src={`${album.embedUrl}&theme=0`}
+                  src={withTheme(album.embedUrl)}
                   width="100%"
                   height="152"
                   frameBorder="0"
