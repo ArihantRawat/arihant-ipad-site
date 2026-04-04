@@ -13,8 +13,8 @@ type SectionKey = "identity" | "career" | "education" | "skills" | "interests" |
 
 const quickStats = [
   { label: "Experience", value: "4+ Years" },
-  { label: "Projects", value: "7+ Built" },
-  { label: "Hours", value: "10K+" },
+  { label: "Products", value: "10+ Shipped" },
+  { label: "Focus", value: "PM + AI" },
 ];
 
 const sections: {
@@ -33,7 +33,7 @@ const sections: {
     color: "#7C3AED",
     title: "Who I Am",
     summary:
-      "I am a product-minded builder who enjoys turning ambiguity into shipped outcomes. I like combining engineering depth with product judgment to build technology that genuinely helps people.",
+      "I am a product-minded builder focused on turning ambiguity into shipped outcomes. I combine engineering depth with product judgment to build practical, user-centered technology.",
     rows: [
       { k: "Name", v: "Arihant Rawat" },
       { k: "Based in", v: "Los Angeles, California" },
@@ -48,12 +48,12 @@ const sections: {
     color: "#8B5CF6",
     title: "Career Snapshot",
     summary:
-      "Across Cult.fit and Salesforce, I worked on end-to-end product development: app architecture, backend systems, data workflows, and cross-functional execution from idea through launch.",
+      "At Salesforce and Cult.fit, I led end-to-end product execution across user journeys, backend systems, data workflows, and cross-functional delivery from idea to launch.",
     rows: [
       { k: "Latest role", v: "Senior Product Developer (MTS), Salesforce" },
       { k: "Prior", v: "Product Developer → Senior Product Developer, Cult.fit" },
       { k: "Strength", v: "Bridging product, engineering, and data" },
-      { k: "Style", v: "User-centric and execution-focused" },
+      { k: "Current direction", v: "Product Management + AI-native products" },
     ],
   },
   {
@@ -63,7 +63,7 @@ const sections: {
     color: "#A855F7",
     title: "Education",
     summary:
-      "I am currently pursuing an MBA (STEM) at USC Marshall. My undergraduate foundation is in engineering from NSIT (now NSUT), which shaped how I approach systems and problem-solving.",
+      "I am currently pursuing an MBA (STEM) at USC Marshall to deepen product, business, and leadership capabilities. My engineering foundation from NSIT (now NSUT) shapes my systems-first problem-solving approach.",
     rows: [
       { k: "Current", v: "MBA (STEM), USC Marshall" },
       { k: "Expected", v: "May 2027" },
@@ -78,10 +78,10 @@ const sections: {
     color: "#6D28D9",
     title: "Core Skills",
     summary:
-      "My toolkit combines software execution and product thinking: full-stack development, AI prototyping, experimentation, roadmapping, and stakeholder communication.",
+      "My toolkit blends software execution with product thinking: full-stack development, AI prototyping, experimentation, roadmapping, and clear stakeholder communication.",
     rows: [
       { k: "Product", v: "Strategy, Roadmapping, User Research" },
-      { k: "Engineering", v: "TypeScript, React, Next.js, Python" },
+      { k: "Engineering", v: "TypeScript, React, Next.js, Python, SQL" },
       { k: "Data", v: "SQL, analytics, experimentation" },
       { k: "AI", v: "LLM integration and product workflows" },
     ],
@@ -93,12 +93,12 @@ const sections: {
     color: "#9333EA",
     title: "Beyond Work",
     summary:
-      "Outside work, I enjoy films and music discovery, outdoor activity, and practical self-improvement systems. These interests keep my thinking creative and grounded.",
+      "Outside work, I enjoy films, music discovery, outdoor activity, and practical self-improvement systems. These interests keep my thinking creative and grounded.",
     rows: [
       { k: "Music", v: "Album discovery and curation" },
       { k: "Film", v: "Story-driven cinema" },
-      { k: "Sports", v: "Hiking, pickleball, board games" },
-      { k: "Lifestyle", v: "Routines, focus systems, biohacking" },
+      { k: "Sports", v: "Hiking, pickleball, and active weekends" },
+      { k: "Lifestyle", v: "Routines, focus systems, and growth mindset" },
     ],
   },
   {

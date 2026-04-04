@@ -24,62 +24,62 @@ const INBOX: Email[] = [
   {
     id: "open",
     from: "Arihant Rawat",
-    fromShort: "CN",
-    subject: "Open to opportunities -ML & Software",
-    preview: "Hi! I'm actively looking for ML engineering, data engineering, and software internships...",
+    fromShort: "AR",
+    subject: "Open to Product, AI, and Builder conversations",
+    preview: "I am currently focused on product roles and AI-native product building...",
     body: `Hi there,
 
-I'm Arihant Rawat -a freshman at USC's Jimmy Iovine & André Young Academy, currently building at the intersection of machine learning and real-world systems.
+I am Arihant Rawat, currently pursuing an MBA (STEM) at USC Marshall after working as a Senior Product Developer at Salesforce and previously at Cult.fit.
 
-I'm actively looking for internships and research positions in:
-• Machine Learning Engineering
-• Data Engineering / Analytics
-• Full-Stack Development (AI-focused)
-• Computer Vision
+I am especially interested in conversations around:
+• Product Management roles
+• AI-native product experiences
+• 0→1 product building and rapid prototyping
+• Cross-functional product execution
 
-Current work: Holographic video processing at AINA Tech (4D Gaussian Splatting), and KTP client projects in data analytics and AI strategy.
+My background spans full-stack engineering, product development, experimentation, and stakeholder alignment across startup and enterprise environments.
 
-Feel free to reach out -I respond to everything.`,
+If you are building something meaningful in product or AI, I would love to connect.`,
     time: "Now",
     unread: true,
   },
   {
     id: "projects",
     from: "Arihant Rawat",
-    fromShort: "CN",
-    subject: "Let's build something together",
-    preview: "I've shipped production ML systems, full-stack apps, and data pipelines...",
-    body: `What I've built:
+    fromShort: "AR",
+    subject: "Projects I am proud of",
+    preview: "From AI prototypes to consumer experiences, I enjoy shipping practical products...",
+    body: `A few projects I am proud of:
 
-ModelLab -ML experiment tracking platform with dataset versioning and reproducibility exports. Production-grade Python EvalHarness computing ROC-AUC, PR-AUC, calibration metrics.
+• iPad Portfolio Experience
+  Built an iOS-inspired interactive portfolio with app-like navigation, lockscreen flow, and polished micro-interactions.
 
-Food Vision -97.20% accurate food classifier using EfficientNetB2 + PyTorch. 29.65MB weights with FastAPI + React frontend.
+• OffGrid
+  A taste-based travel app concept focused on personalized recommendations and thoughtful UX.
 
-16 Tech Personalities -Rule-based career matching platform. 40-question quiz, 16 personality types, 42 tech role matches. 100% test accuracy.
+• Venue Intelligence Discovery
+  Product exploration work connecting user insights to actionable venue recommendations.
 
-NBA Prediction -72.3% accuracy across 6 trained models. Real-time dashboard, 2,788+ games, 200+ players.
-
-LA Healthcare Access -Geospatial analytics across 2,498 census tracts. Identified $645M investment opportunity.
-
-Everything I build is production-quality, documented, and deployed.`,
+Across projects, my focus stays consistent: clear user value, thoughtful product decisions, and reliable execution from idea to shipped experience.`,
     time: "Today",
     unread: false,
   },
   {
-    id: "faith",
+    id: "values",
     from: "Arihant Rawat",
-    fromShort: "CN",
-    subject: "What drives me",
-    preview: "I'm a follower of Jesus, and that shapes everything about how I work and build...",
-    body: `A bit about what drives me:
+    fromShort: "AR",
+    subject: "How I like to build",
+    preview: "I care about user clarity, high standards, and shipping with intent...",
+    body: `A quick note on how I like to work:
 
-I'm a follower of Jesus, and that's not a side note -it's the core of how I approach my work. I believe technology is most powerful when it serves people, not the other way around.
+• User-first thinking over feature-first thinking
+• Fast iteration, but with strong quality standards
+• Clear communication across product, engineering, and design
+• Ownership from ambiguity to launch
 
-I co-founded the SGV Christian Club Collective in high school -uniting 15+ campus ministries across the San Gabriel Valley. I know what it means to build something from nothing and lead with integrity.
+I enjoy teams that are curious, humble, and execution-focused.
 
-At USC, I'm involved with ACTS2 Fellowship, KTP, and several other communities. I care about IRL connection over metrics, quality over speed, and building things that actually matter.
-
-If you're building something meaningful and think I could help, I'd genuinely love to talk.`,
+If this resonates, feel free to reach out.`,
     time: "Yesterday",
     unread: false,
   },
