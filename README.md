@@ -24,6 +24,19 @@ Open: http://localhost:3000
 npm run build
 ```
 
+## GitHub Pages Hosting
+This repo is configured for static export + GitHub Pages deployment.
+
+- `next.config.ts` uses `output: "export"`
+- GitHub Actions workflow: `.github/workflows/deploy-pages.yml`
+- On push to `main`/`master`, Pages deploys the `out/` folder.
+
+### Important note about ArihantGPT chat
+GitHub Pages cannot run Next.js API routes.
+
+- If `NEXT_PUBLIC_CHAT_API_URL` is set, chat uses that external endpoint.
+- If not set, chat falls back to local offline replies.
+
 ## Project Structure
 ```text
 app/

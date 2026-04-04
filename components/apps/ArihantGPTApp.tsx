@@ -24,6 +24,28 @@ const SUGGESTIONS = [
   "What are your career goals?",
 ];
 
+function getOfflineReply(input: string): string {
+  const q = input.toLowerCase();
+
+  if (q.includes("contact") || q.includes("email") || q.includes("reach")) {
+    return "You can reach Arihant at **arihantrawat@gmail.com** or via LinkedIn: **linkedin.com/in/arihantrawat**.";
+  }
+
+  if (q.includes("project")) {
+    return "Arihant has worked on projects across AI + product spaces, including multi-agent venue intelligence, captioning systems, and mobile/web app builds. Check the Projects section for details and links.";
+  }
+
+  if (q.includes("tech") || q.includes("stack") || q.includes("skills")) {
+    return "His core stack includes **TypeScript, React, Next.js, Python, Java, Flutter**, plus product analytics and experimentation workflows.";
+  }
+
+  if (q.includes("work") || q.includes("experience")) {
+    return "He has worked at **Salesforce** (Senior Product Developer) and **Cult.fit** (Product Developer → Senior Product Developer), and is currently pursuing an MBA at USC Marshall.";
+  }
+
+  return "This GitHub Pages version runs without a backend chat API. You can still explore the portfolio sections for projects, experience, education, and contact details.";
+}
+
 // ── Lightweight markdown renderer ────────────────────────────────────────────
 function renderInline(text: string): React.ReactNode {
   const parts = text.split(/(\*\*[^*]+\*\*)/g);
@@ -98,8 +120,16 @@ export default function ArihantGPTApp(_props: Props) {
     setInput("");
     setLoading(true);
     setShowSuggestions(false);
+    const apiUrl = process.env.NEXT_PUBLIC_CHAT_API_URL;
+
     try {
-      const res = await fetch("/api/chat", {
+      if (!apiUrl) {
+        const reply = getOfflineReply(text);
+        setMessages([...newMessages, { role: "assistant", content: reply }]);
+        return;
+      }
+
+      const res = await fetch(apiUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: newMessages }),
