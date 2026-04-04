@@ -65,7 +65,7 @@ const sections: {
     summary:
       "I am currently pursuing an MBA (STEM) at USC Marshall to deepen product, business, and leadership capabilities. My engineering foundation from NSIT (now NSUT) shapes my systems-first problem-solving approach.",
     rows: [
-      { k: "Current", v: "MBA (STEM), USC Marshall" },
+      { k: "Current", v: "MBA (STEM) Candidate, USC Marshall" },
       { k: "Expected", v: "May 2027" },
       { k: "Undergrad", v: "B.E. Information Technology, NSIT/NSUT" },
       { k: "Scholarships", v: "Dean's Merit + Prediger Endowed" },

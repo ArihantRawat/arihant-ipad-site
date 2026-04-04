@@ -175,12 +175,12 @@ export default function SettingsApp({ onClose, orientation }: Props) {
                   }}
                 >
                   <div style={{ width: 60, height: 60, borderRadius: "50%", overflow: "hidden", flexShrink: 0, position: "relative" }}>
-                    <Image src={profile.photoAlt} alt="Arihant Rawat" fill style={{ objectFit: "cover", objectPosition: "center 25%" }} />
+                    <Image src={profile.photo} alt="Arihant Rawat" fill style={{ objectFit: "cover", objectPosition: "center 25%" }} />
                   </div>
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <p style={{ fontSize: 20, fontWeight: 600, color: "#1c1c1e", fontFamily: "-apple-system, sans-serif" }}>Arihant Rawat</p>
                     <p style={{ fontSize: 13, color: "#636366", fontFamily: "-apple-system, sans-serif", marginTop: 1 }}>
-                      USC · Iovine & Young Academy
+                      USC Marshall · MBA (STEM) Candidate
                     </p>
                   </div>
                   <svg width="7" height="12" viewBox="0 0 7 12" fill="none">
@@ -248,7 +248,7 @@ export default function SettingsApp({ onClose, orientation }: Props) {
                     <Image src={profile.photoAlt} alt="Arihant Rawat" fill style={{ objectFit: "cover", objectPosition: "center 25%" }} />
                   </div>
                   <p style={{ fontSize: 22, fontWeight: 700, color: "#1c1c1e", fontFamily: "-apple-system, sans-serif", marginBottom: 3 }}>Arihant Rawat</p>
-                  <p style={{ fontSize: 13, color: "#636366", fontFamily: "-apple-system, sans-serif" }}>USC · Jimmy Iovine & André Young Academy</p>
+                  <p style={{ fontSize: 13, color: "#636366", fontFamily: "-apple-system, sans-serif" }}>USC Marshall · MBA (STEM) Candidate</p>
                 </div>
 
                 {/* Bio */}
@@ -261,9 +261,9 @@ export default function SettingsApp({ onClose, orientation }: Props) {
                 <p style={{ fontSize: 13, color: "#6e6e73", fontFamily: "-apple-system, sans-serif", fontWeight: 500, letterSpacing: 0.3, marginBottom: 6, marginLeft: 16, textTransform: "uppercase" }}>Currently</p>
                 <div style={{ background: "white", borderRadius: 10, overflow: "hidden", marginBottom: 8 }}>
                   {[
-                    { label: "Building", value: "Holographic video @ AINA Tech" },
-                    { label: "Studying", value: "Innovation · ML · Math · Cyber · Entrepreneurship" },
-                    { label: "Learning", value: "PyTorch · 4DGS · Guitar" },
+                    { label: "Building", value: "Product + AI portfolio experiences" },
+                    { label: "Studying", value: "MBA (STEM) at USC Marshall" },
+                    { label: "Learning", value: "AI product strategy and execution" },
                   ].map((item, i) => (
                     <div key={item.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "13px 16px", borderTop: i > 0 ? "0.5px solid rgba(60,60,67,0.18)" : "none" }}>
                       <span style={{ fontSize: 17, color: "#1c1c1e", fontFamily: "-apple-system, sans-serif" }}>{item.label}</span>
