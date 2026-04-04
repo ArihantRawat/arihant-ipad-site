@@ -175,7 +175,7 @@ export default function SettingsApp({ onClose, orientation }: Props) {
                   }}
                 >
                   <div style={{ width: 60, height: 60, borderRadius: "50%", overflow: "hidden", flexShrink: 0, position: "relative" }}>
-                    <Image src={profile.photo} alt="Arihant Rawat" fill style={{ objectFit: "cover", objectPosition: "center 25%" }} />
+                    <Image src={profile.photoAlt} alt="Arihant Rawat" fill style={{ objectFit: "cover", objectPosition: "center 25%" }} />
                   </div>
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <p style={{ fontSize: 20, fontWeight: 600, color: "#1c1c1e", fontFamily: "-apple-system, sans-serif" }}>Arihant Rawat</p>
@@ -245,7 +245,7 @@ export default function SettingsApp({ onClose, orientation }: Props) {
                 {/* Profile header */}
                 <div style={{ background: "white", borderRadius: 10, padding: "20px 16px", marginBottom: 8, display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
                   <div style={{ width: 80, height: 80, borderRadius: "50%", overflow: "hidden", marginBottom: 12, position: "relative" }}>
-                    <Image src={profile.photo} alt="Arihant Rawat" fill style={{ objectFit: "cover", objectPosition: "center 25%" }} />
+                    <Image src={profile.photoAlt} alt="Arihant Rawat" fill style={{ objectFit: "cover", objectPosition: "center 25%" }} />
                   </div>
                   <p style={{ fontSize: 22, fontWeight: 700, color: "#1c1c1e", fontFamily: "-apple-system, sans-serif", marginBottom: 3 }}>Arihant Rawat</p>
                   <p style={{ fontSize: 13, color: "#636366", fontFamily: "-apple-system, sans-serif" }}>USC Marshall · MBA (STEM) Candidate</p>

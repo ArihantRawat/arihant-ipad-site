@@ -139,7 +139,7 @@ export default function AboutApp({ orientation }: Props) {
 
             <div style={{ background: "#fff", border: "1px solid #e5e7eb", borderRadius: 18, overflow: "hidden", marginBottom: 10 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "12px 14px" }}>
-                <Image src={aboutPhoto} alt={profile.photoAlt} width={56} height={56} style={{ borderRadius: 999, objectFit: "cover" }} />
+                <Image src={profile.photoAlt} alt={profile.photoAlt} width={56} height={56} style={{ borderRadius: 999, objectFit: "cover" }} />
                 <div style={{ minWidth: 0 }}>
                   <div style={{ fontSize: 18, fontWeight: 700, color: "#111827", lineHeight: 1.2 }}>{profile.name}</div>
                   <div style={{ fontSize: 13, color: "#6b7280", marginTop: 2 }}>{profile.tagline}</div>
@@ -177,7 +177,7 @@ export default function AboutApp({ orientation }: Props) {
 
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             <div style={{ background: "#fff", border: "1px solid #e5e7eb", borderRadius: 18, padding: "16px", textAlign: "center" }}>
-              <Image src={aboutPhoto} alt={profile.photoAlt} width={92} height={92} style={{ borderRadius: 999, objectFit: "cover", margin: "0 auto 10px" }} />
+              <Image src={profile.photoAlt} alt={profile.photoAlt} width={92} height={92} style={{ borderRadius: 999, objectFit: "cover", margin: "0 auto 10px" }} />
               <h2 style={{ fontSize: compact ? 34 : 44, fontWeight: 800, letterSpacing: -1.2, lineHeight: 1.05, marginBottom: 6, color: "#111827" }}>{profile.name}</h2>
               <p style={{ fontSize: compact ? 15 : 17, color: "#6b7280" }}>{profile.tagline}</p>
             </div>

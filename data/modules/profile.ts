@@ -7,7 +7,7 @@ export const profile = {
   location: "Los Angeles, CA",
   email: "arihantrawat@gmail.com",
   photo: withBasePath("/assets/ArihantAtBeachUSCHoodie.jpg"),
-  photoAlt: "Arihant Rawat",
+  photoAlt: withBasePath("/images/arihant-headshot.jpg"),
   skills: [
     "Product Development",
     "AI Product Prototyping",
