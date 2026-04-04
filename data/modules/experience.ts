@@ -1,3 +1,6 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const withBasePath = (path: string) => `${basePath}${path}`;
+
 export const experience = [
   {
     id: "salesforce",
@@ -5,7 +8,7 @@ export const experience = [
     company: "Salesforce",
     period: "Oct 2023 - Jul 2025",
     year: "2025",
-    logo: "/assets/logos/salesforce.png",
+    logo: withBasePath("/assets/logos/salesforce.png"),
     color: "#00A1E0",
     website: "https://www.salesforce.com/",
     description:
@@ -26,7 +29,7 @@ export const experience = [
     company: "Cult.fit",
     period: "Jul 2021 - Oct 2023",
     year: "2023",
-    logo: "/assets/logos/cultfit.png",
+    logo: withBasePath("/assets/logos/cultfit.png"),
     color: "#7C3AED",
     website: "https://www.cult.fit/",
     description:

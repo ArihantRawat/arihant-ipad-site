@@ -1,9 +1,12 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const withBasePath = (path: string) => `${basePath}${path}`;
+
 export const profile = {
   name: "Arihant Rawat",
   tagline: "USC Marshall · MBA (STEM) · Product Builder",
   location: "Los Angeles, CA",
   email: "arihantrawat@gmail.com",
-  photo: "/assets/ArihantAtBeachUSCHoodie.jpg",
+  photo: withBasePath("/assets/ArihantAtBeachUSCHoodie.jpg"),
   photoAlt: "Arihant Rawat",
   skills: [
     "Product Development",

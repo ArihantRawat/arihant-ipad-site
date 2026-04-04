@@ -11,6 +11,8 @@ import ParticlesBackground from "./ParticlesBackground";
 
 const IPAD_LANDSCAPE = { w: 900, h: 630 };
 const IPAD_PORTRAIT = { w: 630, h: 900 };
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const withBasePath = (path: string) => `${basePath}${path}`;
 
 export default function IPadPage() {
   const [orientation, setOrientation] = useState<"landscape" | "portrait">("landscape");
@@ -75,18 +77,18 @@ export default function IPadPage() {
   // Preload all images on mount
   useEffect(() => {
     const urls = [
-      "/assets/ArihantAtBeachUSCHoodie.jpg",
-      "/assets/ArihantAtUSC.jpg",
-      "/assets/icons/modellab.png",
-      "/assets/icons/tech16-logo.png",
-      "/assets/icons/foodvision-logo.png",
-      "/assets/projects/modellab.jpg",
-      "/assets/projects/tech16personalities.jpg",
-      "/assets/projects/foodvision.jpg",
-      "/assets/projects/la-healthcare.png",
-      "/assets/projects/nba-prediction.png",
-      "/assets/projects/usc-cook-scale.png",
-      "/assets/projects/thelines.jpg",
+      withBasePath("/assets/ArihantAtBeachUSCHoodie.jpg"),
+      withBasePath("/assets/ArihantAtUSC.jpg"),
+      withBasePath("/assets/icons/modellab.png"),
+      withBasePath("/assets/icons/tech16-logo.png"),
+      withBasePath("/assets/icons/foodvision-logo.png"),
+      withBasePath("/assets/projects/modellab.jpg"),
+      withBasePath("/assets/projects/tech16personalities.jpg"),
+      withBasePath("/assets/projects/foodvision.jpg"),
+      withBasePath("/assets/projects/la-healthcare.png"),
+      withBasePath("/assets/projects/nba-prediction.png"),
+      withBasePath("/assets/projects/usc-cook-scale.png"),
+      withBasePath("/assets/projects/thelines.jpg"),
     ];
     urls.forEach((url) => { const img = new Image(); img.src = url; });
   }, []);

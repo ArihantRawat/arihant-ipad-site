@@ -13,6 +13,9 @@ interface Props {
   onUnlock: () => void;
 }
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const withBasePath = (path: string) => `${basePath}${path}`;
+
 function WorkCalendarIcon({ size, now }: { size: number; now: Date | null }) {
   const dayStr = now ? now.toLocaleDateString("en-US", { weekday: "short" }) : "MON";
   const dayNum = now ? now.getDate() : 1;
@@ -201,7 +204,7 @@ export default function HomeScreen({ orientation, onOpenApp, locked, onUnlock }:
       {/* Wallpaper */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/assets/ArihantAtBeachUSCHoodie.jpg"
+        src={withBasePath("/assets/ArihantAtBeachUSCHoodie.jpg")}
         alt=""
         style={{
           position: "absolute",
@@ -248,7 +251,7 @@ export default function HomeScreen({ orientation, onOpenApp, locked, onUnlock }:
             {/* Lock wallpaper */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/lockscreen-photo-v2.jpg?v=3"
+              src={withBasePath("/assets/lockscreen-photo-v2.jpg?v=3")}
               alt=""
               style={{
                 position: "absolute",

@@ -1,3 +1,6 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const withBasePath = (path: string) => `${basePath}${path}`;
+
 export const skills = {
   languages: [
     { name: "Python", level: 90, color: "#3776AB" },
@@ -46,7 +49,7 @@ export const personalSettings = [
 
 export const photos = [
   {
-    src: "/images/arihant-headshot.jpg",
+    src: withBasePath("/images/arihant-headshot.jpg"),
     caption: "Arihant Rawat",
     date: "2026",
     location: "Los Angeles, CA",
@@ -61,7 +64,7 @@ export const organizations = [
     shortName: "USC Marshall",
     role: "MBA Student",
     period: "2025 - Present",
-    logo: "/assets/logos/usc.png",
+    logo: withBasePath("/assets/logos/usc.png"),
     color: "#990000",
     description: "MBA (STEM) student focused on product, technology, and AI-driven business strategy.",
     link: "https://www.marshall.usc.edu/",

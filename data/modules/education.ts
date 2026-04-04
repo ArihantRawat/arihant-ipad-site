@@ -1,3 +1,6 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const withBasePath = (path: string) => `${basePath}${path}`;
+
 export const education = [
   {
     id: "usc",
@@ -6,7 +9,7 @@ export const education = [
     degree: "MBA (STEM)",
     period: "Expected May 2027",
     status: "Current",
-    logo: "/assets/logos/usc.png",
+    logo: withBasePath("/assets/logos/usc.png"),
     color: "#990000",
     website: "https://www.marshall.usc.edu/",
     description: "Dean's Merit Scholarship (100%) · Prediger Endowed Scholarship · GMAT FE 705",
@@ -19,7 +22,7 @@ export const education = [
     degree: "B.E. in Information Technology (Computer Science)",
     period: "May 2021",
     status: "Completed",
-    logo: "/assets/logos/nsut.png",
+    logo: withBasePath("/assets/logos/nsut.png"),
     color: "#2563EB",
     website: "https://www.nsut.ac.in/",
     description: "First Class Distinction (CGPA 8.6/10.0)",
