@@ -38,7 +38,7 @@ const sections: {
       { k: "Name", v: "Arihant Rawat" },
       { k: "Based in", v: "Los Angeles, California" },
       { k: "Originally", v: "India (Delhi / Bangalore)" },
-      { k: "Focus", v: "Product + Engineering" },
+      { k: "Focus", v: "Product Management + AI Products" },
     ],
   },
   {

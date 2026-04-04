@@ -3,7 +3,7 @@ const withBasePath = (path: string) => `${basePath}${path}`;
 
 export const profile = {
   name: "Arihant Rawat",
-  tagline: "USC Marshall · MBA (STEM) · Product Builder",
+  tagline: "USC Marshall MBA (STEM) Candidate · Product + AI",
   location: "Los Angeles, CA",
   email: "arihantrawat@gmail.com",
   photo: withBasePath("/assets/ArihantAtBeachUSCHoodie.jpg"),
