@@ -146,7 +146,7 @@ export default function IPadFrame({ orientation, children, onPowerPress }: Props
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            boxShadow: "0 4px 14px rgba(0,0,0,0.35)",
+            boxShadow: "0 3px 10px rgba(0,0,0,0.28)",
             pointerEvents: "none",
             zIndex: 20,
             fontFamily: "-apple-system, sans-serif",
