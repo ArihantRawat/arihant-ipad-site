@@ -127,6 +127,33 @@ export default function IPadFrame({ orientation, children, onPowerPress }: Props
         >
           {children}
         </div>
+
+        {/* In-progress corner strip */}
+        <div
+          style={{
+            position: "absolute",
+            right: -36,
+            bottom: 16,
+            width: 132,
+            height: 20,
+            transform: "rotate(-45deg)",
+            background: "linear-gradient(90deg, #22c55e 0%, #16a34a 100%)",
+            color: "#f0fdf4",
+            fontSize: 8,
+            fontWeight: 700,
+            letterSpacing: 0.5,
+            textTransform: "uppercase",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            boxShadow: "0 4px 14px rgba(0,0,0,0.35)",
+            pointerEvents: "none",
+            zIndex: 20,
+            fontFamily: "-apple-system, sans-serif",
+          }}
+        >
+          In Progress
+        </div>
       </motion.div>
 
       {/* ── Frame specular / shine overlay ── */}
