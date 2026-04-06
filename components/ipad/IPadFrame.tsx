@@ -132,10 +132,10 @@ export default function IPadFrame({ orientation, children, onPowerPress }: Props
         <div
           style={{
             position: "absolute",
-            right: -36,
-            bottom: 16,
-            width: 132,
-            height: 20,
+            right: -32,
+            bottom: 14,
+            width: 124,
+            height: 18,
             transform: "rotate(-45deg)",
             background: "linear-gradient(90deg, #22c55e 0%, #16a34a 100%)",
             color: "#f0fdf4",
